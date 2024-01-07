@@ -1,3 +1,7 @@
+'''
+A simple Dash app with:
+    multiple html components with each component has class name, id and other parameters
+'''
 import dash
 from dash import html
 

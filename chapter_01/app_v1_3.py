@@ -1,3 +1,8 @@
+'''
+A simple Dash app with:
+    multiple html components with each component has class name, id and other parameters
+    layout with Dash Bootstrap Components package to add themes
+'''
 import dash
 from dash import html
 import dash_bootstrap_components as dbc

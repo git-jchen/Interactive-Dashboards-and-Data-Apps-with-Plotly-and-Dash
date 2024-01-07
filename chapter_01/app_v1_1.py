@@ -1,3 +1,6 @@
+'''
+A simple Dash app with an html layout only
+'''
 import dash
 from dash import html
 

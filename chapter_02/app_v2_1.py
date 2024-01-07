@@ -1,13 +1,13 @@
 import dash
-import dash_html_components as html
-import dash_core_components as dcc
+from dash import html
+from dash import dcc
 import dash_bootstrap_components as dbc
 from dash.dependencies import Output, Input
 import pandas as pd
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
-poverty_data = pd.read_csv('../data/PovStatsData.csv')
+poverty_data = pd.read_csv('./data/PovStatsData.csv')
 
 app.layout = html.Div([
     html.H1('Poverty And Equity Database'),
@@ -64,4 +64,4 @@ def display_country_report(country):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, port=1234)
