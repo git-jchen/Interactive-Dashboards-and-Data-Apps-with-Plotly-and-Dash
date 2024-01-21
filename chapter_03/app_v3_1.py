@@ -1,14 +1,14 @@
 import dash
-import dash_html_components as html
-import dash_core_components as dcc
+from dash import html
+from dash import dcc
 import dash_bootstrap_components as dbc
 from dash.dependencies import Output, Input
-import plotly.graph_objects as go
 import pandas as pd
+import plotly.graph_objects as go
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
-poverty_data = pd.read_csv('../data/PovStatsData.csv')
+poverty_data = pd.read_csv('./data/PovStatsData.csv')
 
 regions = ['East Asia & Pacific', 'Europe & Central Asia',
            'Fragile and conflict affected situations', 'High income',

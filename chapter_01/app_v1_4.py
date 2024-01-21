@@ -36,8 +36,9 @@ app.layout = html.Div([
                 html.Br(),
                 html.Li('Book title: Interactive Dashboards and Data Apps with Plotly and Dash'),
                 html.Li(['GitHub repo: ',
-                         html.A('https://github.com/PacktPublishing/Interactive-Dashboards-and-Data-Apps-with-Plotly-and-Dash',
-                                href='https://github.com/PacktPublishing/Interactive-Dashboards-and-Data-Apps-with-Plotly-and-Dash')
+                         html.A(
+                             'https://github.com/PacktPublishing/Interactive-Dashboards-and-Data-Apps-with-Plotly-and-Dash',
+                             href='https://github.com/PacktPublishing/Interactive-Dashboards-and-Data-Apps-with-Plotly-and-Dash')
                          ])
             ])
         ], label='Project Info')
